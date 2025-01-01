@@ -35,7 +35,7 @@ def main(cfg: DeploymentConfig) -> None:
     # Trace the model
     print(f"Tracing model on device: {device}")
     traced_model = torch.jit.trace(model, example_input)
-    
+    print(traced_model.graph)
     # Move traced model to CPU before saving
     traced_model = traced_model.to(device)
     
