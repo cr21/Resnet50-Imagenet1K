@@ -1,0 +1,7 @@
+gradio
+torch
+torchvision
+Pillow
+numpy==1.26.0
+matplotlib
+boto3
